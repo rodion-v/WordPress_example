@@ -1,7 +1,7 @@
 # WordPress_example
 Docker-version of worpress-based website with mysql-backend
 
-*Prerequisites:**
+**Prerequisites:**
 
 * docker.io and git packages (for deb-based distro - apt install git docker.io)
 * rights to manage docker (sudo usermod -a $USER -G docker; logoff-logon after changes) 
