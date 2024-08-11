@@ -10,7 +10,7 @@ docker network create --subnet 192.168.111.22/28  wordpress_net001
 docker run --rm --name mysql -e MYSQL_ROOT_PASSWORD=verystr0ngp@ssw0rd -e MYSQL_PASSWORD=word0pass -e MYSQL_USER=abuser -e MYSQL_DATABASE=wordpress -v $(pwd)/sqldb:/var/lib/mysql --net wordpress_net001 -d mysql:5.7
 
 #Start container "front" 
-docker run --rm --name front  -p 8080:80 --net wordpress_net001 -d wordpress:001
+docker run --rm --name front  -p 127.0.0.1:8080:80 --net wordpress_net001 -d wordpress:001
 
 #Check for started containers:
 docker ps
